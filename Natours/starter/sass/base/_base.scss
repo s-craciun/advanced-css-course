@@ -17,10 +17,6 @@ html {
     font-size: 50%;
   }
 
-  @include respond(phone) {
-    font-size: 30%;
-  }
-
   @include respond(big-desktop) {
     font-size: 75%;
   }
