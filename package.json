@@ -4,14 +4,14 @@
   "description": "This repo contains starter files and the finished project files for all the projects contained in the course.",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass ./Natours/starter/sass/main.scss ./Natours/starter/css/style.css -w",
+    "watch:sass": "node-sass ./Nexter/starter/sass/main.scss ./Nexter/starter/css/style.css -w",
     "devServer": "live-server",
     "start": "npm-run-all --parallel devServer watch:sass",
 
-    "compile:sass": "node-sass ./Natours/starter/sass/main.scss ./Natours/starter/css/style.comp.css",
-    "concat:css": "concat -o ./Natours/starter/css/style.concat.css ./Natours/starter/css/icon-font.css ./Natours/starter/css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./Natours/starter/css/style.concat.css -o ./Natours/starter/css/style.prefix.css",
-    "compress:css": "node-sass ./Natours/starter/css/style.prefix.css ./Natours/starter/css/style.css --output-style compressed",
+    "compile:sass": "node-sass ./Nexter/starter/sass/main.scss ./Nexter/starter/css/style.comp.css",
+    "concat:css": "concat -o ./Nexter/starter/css/style.concat.css ./Nexter/starter/css/icon-font.css ./Nexter/starter/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./Nexter/starter/css/style.concat.css -o ./Nexter/starter/css/style.prefix.css",
+    "compress:css": "node-sass ./Nexter/starter/css/style.prefix.css ./Nexter/starter/css/style.css --output-style compressed",
 
     "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
